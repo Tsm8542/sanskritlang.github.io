@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskrit</title>
+</head>
+<script src="script.js"></script>
+<style>
+    html{
+        background-color: black;
+        color: aqua;
+    }
+    .menu{
+        font-size: x-large;
+        text-align: center;
+    }
+    .standard,.page_range{
+        display: inline-block;
+    }
+    iframe{
+        width: 100%;
+        height: 600px;
+        border: none;
+        margin-top: 2px;
+    }
+    select{
+        margin: 2px;
+        text-align: center;
+        background-color: black;
+        color: cyan;
+        font-size: x-large;
+        border-radius: 10px;
+        border: 3px solid red;
+    }
+    select:focus{
+        border: 1px solid yellow;
+    }
+    .download{
+        display: none;
+        color: black;
+        padding: 1%;
+        margin: 2%;
+        border: 3px solid blue;
+        border-radius: 10px;
+    }
+    .download a{
+        text-decoration: none;
+        font-size: x-large;
+        color: white;
+    }
+    @media only screen and (max-width: 385px) {
+        .standard,.page_range{
+            display: block;
+        }
+        select{
+            width: 90%;
+        }
+        iframe{
+            width: 100%;
+            height: 775px;
+        }
+    }
+</style>
+<body>
+    <div class="menu">
+        <div class="genre">
+            <select id="genre" onchange="s()">
+                <option value="sanskrit_composite">Sanskrit Composite</option>
+                <option value="sanskrit_full">Sanskrit Full</option>
+                <option value="sanskrit">Sanskrit</option>
+                <option value="download">Downloads</option>
+            </select>
+        </div>
+        <div class="standard">
+            <!--label for="branch">Branch:</label-->
+            <select id="standard" onchange="x()">
+                <option value="std8">Std 8</option>
+                <option value="std9">Std 9</option>
+                <option value="std10">Std 10</option>
+            </select>
+        </div>
+        <div class="page_range">
+            <!--label for="topic">Topic:</label-->
+            <select id="page_range" onchange="z()">
+                <option value="std_1_pr_1-30">1-30</option>
+                <option value="std_1_pr_31-60">31-60</option>
+                <option value="std_1_pr_61-90">61-90</option>
+                <option value="all8">All</option>
+            </select>
+        </div>
+    </div>
+    <iframe src="Sanskrit Composite Std 8/pr_1-30.html" id="frame"></iframe>
+    <div class="download">
+        <header style="text-align: center;color: red;">
+            <h1>Download the textbooks in PDF format:</h1>
+        </header>
+        <h2 style="color: lime;">Sanskrit Composite Textbooks:</h2>
+        <ol style="font-size: x-large; color: lime;">
+            <li>
+                <a href="Downloads/Sanskrit Composite Std 8.pdf" download="
+                Sanskrit Composite Std 8" title="Sanskrit Composite Std 8">Download Sanskrit Composite Std 8 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Sanskrit Composite Std 9.pdf" download="
+                Sanskrit Composite Std 9" title="Sanskrit Composite Std 9">Download Sanskrit Composite Std 9 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Sanskrit Composite Std 10.pdf" download="
+                Sanskrit Composite Std 10" title="Sanskrit Composite Std 10">Download Sanskrit Composite Std 10 (.pdf)</a>
+            </li>
+        </ol>
+        <h2 style="color: lime;">Sanskrit Full Textbooks:</h2>
+        <ol style="font-size: x-large; color: lime;">
+            <li>
+                <a href="Downloads/Sanskrit Full Std 8.pdf" download="
+                Sanskrit Full Std 8" title="Sanskrit Full Std 8">Download Sanskrit Full Std 8 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Sanskrit Full Std 9.pdf" download="
+                Sanskrit Full Std 9" title="Sanskrit Full Std 9">Download Sanskrit Full Std 9 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Sanskrit Full Std 10.pdf" download="
+                Sanskrit Full Std 10" title="Sanskrit Full Std 10">Download Sanskrit Full Std 10 (.pdf)</a>
+            </li>
+        </ol>
+        <h2 style="color: lime;">Sanskrit Textbooks:</h2>
+        <ol style="font-size: x-large; color: lime;">
+            <li>
+                <a href="Downloads/Sanskrit Std 11.pdf" download="
+                Sanskrit Std 11" title="Sanskrit Std 11">Download Sanskrit Std 11 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Sanskrit Std 12.pdf" download="
+                Sanskrit Std 12" title="Sanskrit Std 12">Download Sanskrit Std 12 (.pdf)</a>
+            </li>
+        </ol>
+        <h2 style="color: lime;">All Textbooks:</h2>
+        <ol style="font-size: x-large; color: lime;">
+            <li>
+                <a href="Downloads/Sanskrit.zip" download="Sanskrit">Download Sanskrit Language - All .pdf in one (.zip)</a>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

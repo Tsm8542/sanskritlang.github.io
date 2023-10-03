@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    img{
+        height: 600px;
+    }
+    @media only screen and (max-width: 720px) {
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+<script>
+    function x(){
+        for(let i=1;i<=30;i++){
+            let x = '<img src="Main/'+i+'.jpg">';
+            document.querySelector("body").innerHTML+=x;
+        }
+    }
+</script>
+<body onload="x()">
+</body>
+</html>
